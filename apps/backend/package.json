@@ -1,0 +1,17 @@
+{
+  "name": "@le-chat-noir/backend",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@effect/platform-bun": "^0.60.16",
+    "effect": "^3.14.8",
+    "elysia": "latest"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "module": "src/index.js"
+}
