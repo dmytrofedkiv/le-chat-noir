@@ -13,4 +13,11 @@ export interface Equal {
 }
 export const Equal = Data.tagged<Equal>("Equal");
 
-export type Node = Literal | Equal;
+export interface Union {
+  _tag: "Union";
+  left: Equal | Union;
+  right: Equal | Union;
+}
+export const Union = Data.tagged<Union>("Union");
+
+export type Node = Literal | Equal | Union;
